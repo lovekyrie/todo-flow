@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react'
+import type { SubmitEvent } from 'react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api, errorMessage, setToken } from '../api'
@@ -14,14 +14,17 @@ function RegisterPage() {
   const mismatch = confirmPassword !== '' && password !== confirmPassword
   const canSubmit = username.trim() !== '' && password !== '' && password === confirmPassword
 
-  async function handleRegister(event: FormEvent<HTMLFormElement>) {
+  async function handleRegister(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!canSubmit)
       return
 
     const response = await api('/api/auth/register', {
       method: 'POST',
-      body: JSON.stringify({ username: username.trim(), password }),
+      body: JSON.stringify({
+        username: username.trim(),
+        password,
+      }),
     })
     if (!response.ok) {
       setSubmitError(await errorMessage(response, '注册失败'))

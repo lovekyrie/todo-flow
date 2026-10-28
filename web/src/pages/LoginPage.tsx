@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react'
+import type { SubmitEvent } from 'react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api, errorMessage, setToken } from '../api'
@@ -10,11 +10,14 @@ function LoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
 
-  async function handleLogin(event: FormEvent<HTMLFormElement>) {
+  async function handleLogin(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault()
     const response = await api('/api/auth/login', {
       method: 'POST',
-      body: JSON.stringify({ username: username.trim(), password }),
+      body: JSON.stringify({
+        username: username.trim(),
+        password,
+      }),
     })
     if (!response.ok) {
       setError(await errorMessage(response, '登录失败'))

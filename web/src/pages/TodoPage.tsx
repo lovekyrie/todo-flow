@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react'
+import type { SubmitEvent } from 'react'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api, clearToken } from '../api'
@@ -39,7 +39,7 @@ function TodoPage() {
     navigate('/login')
   }
 
-  async function handleAdd(event: FormEvent<HTMLFormElement>) {
+  async function handleAdd(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault()
     const nextTitle = title.trim()
     if (!nextTitle) {
