@@ -1,0 +1,167 @@
+{
+  "status": "passed",
+  "coverage": "auth, password visibility, registration mismatch/conflict, CRUD, toggle/undo, filters, counts, long titles, empty/loading/error/retry, network failures, 401, logout",
+  "results": [
+    {
+      "page": "login",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "root": 320,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "login",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "login",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "root": 390,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "login",
+      "viewport": 430,
+      "scrollWidth": 430,
+      "root": 430,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "login",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "root": 480,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "register",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "root": 320,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "register",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "register",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "root": 390,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "register",
+      "viewport": 430,
+      "scrollWidth": 430,
+      "root": 430,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "register",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "root": 480,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "todos",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "root": 320,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "todos",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "todos",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "root": 390,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "todos",
+      "viewport": 430,
+      "scrollWidth": 430,
+      "root": 430,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "todos",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "root": 480,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "long-title",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "root": 320,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "empty",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "filter-empty",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "loading",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    },
+    {
+      "page": "load-error",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "root": 375,
+      "overlap": false,
+      "invalidImages": 0
+    }
+  ],
+  "pageErrors": []
+}
